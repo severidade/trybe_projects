@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rye', cursive; 
+font-family: 'Yeseva One', cursive;
+*/
+
+:root{
+  --primary-color: #7e2610;
+  --second-collor: #ea8608;
+  --second-collor-light: #eacc97;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  position: relative;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-size: 62.5%; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 2.6;
+  
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+ .main-content, .aside-one, .aside-two, footer {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+
+}
+
+header {
+  order: 1;
+  width: 100%;
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content{
+  order: 2;
+}
+
+.aside-one {
+  order: 3;
+}
+
+.aside-two {
+  order: 4;
+}
+
+footer {
+  order: 5;
+}
+
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+ justify-content: center;
+ gap: 40px;
+ padding-bottom: 10px;
+
+}
+nav ul li {
+  color: var(--second-collor);
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 300;
+  list-style: none;
+}
+
+header p {
+  color: var(--second-collor);
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 0.8;
+  padding: 20px 0;
+  text-align: center;
+}
+
+article h1::before{
+  content: "";
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  left: 0;
+  top: -40vh;
+  background: url("img/coelho.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 80%;
+}
+
+article h1 {
+  font-family: 'Yeseva One', cursive;
+  font-weight: 400;
+  font-size: 1.8em;
+  line-height: 1;
+  margin-top: 40vh;
+  padding-top: 10px;
+  color: var(--primary-color);
+}
+
+article p:first-of-type::first-letter {
+  font-family: 'Rye', cursive;
+  float: left;
+  color: var(--second-collor);
+  font-size: 5rem;
+  line-height: 4rem;
+  padding: 10px 10px 0 0;
+}
+article p {
+  margin-bottom: 20px;
+}
