@@ -118,3 +118,8 @@ footer strong.titulo  {
   margin-right: 10px;
   font-size: small;
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
