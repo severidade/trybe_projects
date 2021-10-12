@@ -40,6 +40,7 @@ window.onload = function() {
 
   rangeInput.addEventListener('input', updatedRangeValue);
   rangeInput.addEventListener('mouseup', upDateBase); 
+  rangeInput.addEventListener('ontouchend', upDateBase); 
 
 };
 
