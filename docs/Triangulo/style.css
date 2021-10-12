@@ -30,9 +30,10 @@ body {
     background-image: url(img/black_texture.png);
     color: var(--main-bg-color);
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
 }
 
-header , .stage{
+header , .stage, footer{
   width: calc(100% - 60px);
   margin: auto;
   max-width: 300px;
@@ -102,5 +103,17 @@ input[type="range"]::-webkit-slider-thumb {
 #myItemList {
   width: 300px;
   height: 300px;
+  margin-bottom: 40px;
   /* background-color: olive; */
+}
+
+footer p {
+  text-align: center;
+  font-size: 18px;
+}
+
+footer strong.titulo  {
+  text-transform: uppercase;
+  margin-right: 10px;
+  font-size: small;
 }
