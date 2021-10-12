@@ -28,20 +28,27 @@ body {
     height: 100vh;
     min-height: 10vh; */
     background-image: url(img/black_texture.png);
+    color: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+
+header , .stage{
+  width: calc(100% - 40px);
+  margin: auto;
+  /* background-color: tomato; */
+}
+header {
+  margin-top: 40px;
 }
 
 ul {
     list-style-type: none; 
 }
 
-#board-size {
-    width: 100px;
-}
-
 h1 {
   font-family: Alfa Slab One, cursive;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom:40px;
   font-size: 50px;
   line-height: 1.1em;
   font-weight: 100;
@@ -49,9 +56,11 @@ h1 {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+
   font-size: 20px;
-  font-weight: 300;;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
   color: var(--main-bg-color);
 }
 form#side_size {
@@ -87,4 +96,10 @@ input[type="range"]::-webkit-slider-thumb {
   border: 3px solid var(--second-color);
   z-index: 3;
   cursor: pointer;
+}
+
+#myItemList {
+  width: 300px;
+  height: 300px;
+  /* background-color: olive; */
 }
