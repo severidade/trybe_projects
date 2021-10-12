@@ -33,9 +33,9 @@ body {
 }
 
 header , .stage{
-  width: calc(100% - 40px);
+  width: calc(100% - 60px);
   margin: auto;
-  /* background-color: tomato; */
+  max-width: 300px;
 }
 header {
   margin-top: 40px;
@@ -69,6 +69,7 @@ form#side_size {
   align-items: center;
   gap: 20px;
   flex-direction: column-reverse;
+  margin-bottom: 40px;
 }
 #value {
   font-family: 'Abril Fatface', cursive;
