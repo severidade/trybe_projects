@@ -30,7 +30,7 @@ body {
     background-image: url(img/black_texture.png);
     color: var(--main-bg-color);
     font-family: 'Lato', sans-serif;
-    line-height: 1.5;
+
 }
 
 header , .stage, footer{
@@ -63,6 +63,7 @@ p {
   margin-bottom: 20px;
   text-align: center;
   color: var(--main-bg-color);
+  line-height: 1.5;
 }
 form#side_size {
   display: flex;
