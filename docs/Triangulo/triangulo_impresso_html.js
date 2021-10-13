@@ -20,7 +20,7 @@ window.onload = function() {
   }
 
   function upDateBase() {
-    const remove = document.querySelectorAll('li');
+    const remove = document.querySelectorAll('#myItemList li');
     remove.forEach((element) => {
       element.remove();
     });
